@@ -18,6 +18,15 @@ conda activate iddn
 ```
 
 ### Install Python package
+We need some functions in `DDN3` package to generate synthetic data.
+Download the package [here](https://github.com/cbil-vt/DDN3), unzip, 
+go ton the folder, and install in develop mode
+```bash
+pip install -e ./`
+```
+If you want to use `DDN3` in develop mode, you need to install it before `iDDN` below.
+If there is no need to change code in `DDN3`, installing `iDDN` will download the version from PyPI.
+
 Download the `iDDN` package [here](https://github.com/cbil-vt/iDDN), unzip, 
 go ton the folder, and install in develop mode
 ```bash
@@ -29,13 +38,6 @@ in `iddn_paper` package.
 
 Download the package [here](https://github.com/cbil-vt/iddn_paper), unzip, 
 go to the folder, and install in develop mode
-```bash
-pip install -e ./`
-```
-
-We need some functions in `DDN3` package to generate synthetic data.
-Download the package [here](https://github.com/cbil-vt/DDN3), unzip, 
-go ton the folder, and install in develop mode
 ```bash
 pip install -e ./`
 ```
