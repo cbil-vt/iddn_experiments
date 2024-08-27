@@ -84,7 +84,7 @@ rho1_rg = np.arange(0.02, 0.81, 0.02)
 rho2_rg = np.arange(0.0, 0.11, 0.01)
 # rho2_rg = np.arange(0.0, 0.21, 0.02)
 
-top_folder = tool_sys.get_work_folder() + "/experiment_iddn_paper/"
+top_folder = tool_sys.get_work_folder()
 dat_file = f"{top_folder}/sim_input/{exp_name}.hdf5"
 
 (

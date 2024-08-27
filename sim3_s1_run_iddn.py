@@ -22,7 +22,7 @@ rho2_rg = np.arange(0.0, 0.16, 0.01)
 
 msk_level_rg = [3, 6, 9]
 
-top_folder = tool_sys.get_work_folder() + "/experiment_iddn_paper/"
+top_folder = tool_sys.get_work_folder()
 dat_file = f"{top_folder}/sim_input/{exp_name}.hdf5"
 
 (

@@ -5,6 +5,7 @@ library(JGLtry)  # The JGL package in code_extra/ddn_peers/
 # Settings ----
 
 sim_data_folder <- "../../sim_iddn_data/sim_input/"
+sim_out_filder = "../../sim_iddn_data/sim_output/"
 
 exp_name = "sim3_ggm_three_layer_v2_batch_2024_08_07_22_31_38"
 
@@ -40,7 +41,7 @@ dep_est_arr = collect_parallel_res(res0)
 
 # Save results ----
 
-fname = paste("../../sim_iddn_data/sim_output/", exp_name, "_jgl_sample_", n_sample_work,
+fname = paste(sim_out_filder, exp_name, "_jgl_sample_", n_sample_work,
               "_sigma_", sprintf("%.1f",sigma_add), ".hdf5", sep = "")
 h5createFile(fname)
 h5write(dep_est_arr, fname, "dep_est")

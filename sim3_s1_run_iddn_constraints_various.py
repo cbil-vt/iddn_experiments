@@ -27,7 +27,7 @@ rho2_rg = np.arange(0.0, 0.21, 0.02)
 
 prior_name = "basic"
 
-top_folder = tool_sys.get_work_folder() + "/experiment_iddn_paper/"
+top_folder = tool_sys.get_work_folder()
 dat_file = f"{top_folder}/sim_input/{exp_name}.hdf5"
 
 dat1, dat2, con1, con2, comm, diff, _, dep_mat_prior, _, layer_count = (

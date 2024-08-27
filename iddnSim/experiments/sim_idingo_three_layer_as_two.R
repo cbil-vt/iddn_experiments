@@ -8,6 +8,7 @@ library(parallel)
 # Settings ----
 
 sim_data_folder <- "../../sim_iddn_data/sim_input/"
+sim_out_folder <- "../../sim_iddn_data/sim_output/"
 exp_name = "sim3_ggm_three_layer_v2_batch_2024_08_07_22_31_38"
 
 n_rep = 5
@@ -106,7 +107,7 @@ for (n in 1:n_rep) {
 
 # ----
 
-fname = paste("../../sim_iddn_data/sim_output/", exp_name, "_idingo_sample_", n_sample_work,
+fname = paste(sim_out_folder, exp_name, "_idingo_sample_", n_sample_work,
               "_sigma_", sprintf("%.1f",sigma_add), "_3as2_layer.hdf5", sep = "")
 h5createFile(fname)
 h5write(diffscore_mat_all, fname, "diffscore")

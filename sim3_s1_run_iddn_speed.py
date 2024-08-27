@@ -27,7 +27,7 @@ msk_level = 9
 run_time = np.zeros((len(exp_name_lst), n_rep))
 
 for i, exp_name in enumerate(exp_name_lst):
-    top_folder = tool_sys.get_work_folder() + "/experiment_iddn_paper/"
+    top_folder = tool_sys.get_work_folder()
     dat_file = f"{top_folder}/sim_input/{exp_name}.hdf5"
 
     (
