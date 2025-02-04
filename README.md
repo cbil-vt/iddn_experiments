@@ -188,3 +188,7 @@ After running the simulation, we can use `sim3_s2_analysis_draw_v2.ipynb` to cal
 and draw the figures. 
 We can choose the name of synthetic data, and no other parameter setting is needed to reproduce the 
 figures in the main body and the supplementary of the paper.
+
+## Notes
+
+We are also testing Ubuntu based simulation.
