@@ -1,6 +1,6 @@
 # %%
 # Give iDDN part of the omics iddn_data,
-# To show that using more omics types (miRNA, lncRNA) can improve the estimation of TF-TF-mRNA network
+# To show that using more omics types (miRNA, lncRNA) can improve the estimation of TF-mRNA network
 # 0  1  2  3  4  5  6  7  8  9  10
 # 0  0  10 20 30 40 50 60 70 80 90
 

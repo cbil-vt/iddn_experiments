@@ -17,7 +17,12 @@ from iddn_paper import tool_scan, sim3_h5op, tool_sys
 
 # %%
 
-exp_name = "sim3_ggm_three_layer_batch_444445"
+node = 5
+if node == 5:
+    exp_name = "sim3_ggm_three_layer_v2_batch_2024_08_07_16_41_06"
+else:
+    exp_name = "sim3_ggm_three_layer_v2_batch_2024_08_07_22_31_38"
+# exp_name = "sim3_ggm_three_layer_batch_444445"
 
 n_rep = 32
 n_sample_work = 200  # 100

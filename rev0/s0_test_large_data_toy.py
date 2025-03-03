@@ -14,19 +14,18 @@ reload(solver)
 
 # %%
 
-mdata = mu.read("../../iddn_play/muon/data/pbmc10k.h5mu")
+rna = mu.read("../../iddn_data/muon/data/pbmc10k.h5mu/rna")
+# atac = mu.read("../../iddn_data/muon/data/pbmc10k.h5mu/atac")
 
 # %%
 
-
-
-# %%
-
-rna = mdata.mod['rna']
+# rna = mdata.mod['rna']
 data:np.ndarray = rna.X
 
-dat1 = data[:1000].astype(np.float64)
-dat2 = data[1000:2000].astype(np.float64)
+n_per_grp = 5000
+
+dat1 = data[:n_per_grp].astype(np.float64)
+dat2 = data[n_per_grp:2*n_per_grp].astype(np.float64)
 
 s1 = np.std(dat1,axis=0)
 s2 = np.std(dat2,axis=0)
@@ -54,7 +53,7 @@ out_iddn = iddn.iddn_parallel(
     dep_mat=dep_mat,
     lambda1=l1_mat,
     lambda2=l2_mat,
-    n_process=8,
+    n_process=6,
     output_sparse=True,
 )
 
